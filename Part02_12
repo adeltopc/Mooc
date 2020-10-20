@@ -1,0 +1,32 @@
+ 
+import java.util.Scanner;
+ 
+public class AverageOfNumbers {
+ 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double sum = 0;
+        double tracker = 0; 
+        double average; 
+        
+        while(true){
+            System.out.println("Give a number: ");
+            int num = Integer.valueOf(scanner.nextLine());
+            sum = (sum + num);
+            
+            if (num > 0){
+                tracker =  tracker +1; 
+            }
+            if (num < 0){
+                tracker = tracker + 1;
+            }
+            if (num == 0){
+                break;
+            }
+        }
+       
+        average = sum / tracker;
+        System.out.println("Average of the numbers: " + average);
+    }
+}
+ 
