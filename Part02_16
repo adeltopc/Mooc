@@ -1,4 +1,3 @@
- 
 import java.util.Scanner;
  
 public class FromWhereToWhere {
@@ -8,6 +7,17 @@ public class FromWhereToWhere {
  
         // Write your program here
         
+        /* Part 1
+        System.out.println("Where to?");
+        int end = Integer.valueOf(scanner.nextLine());
+        
+        for(int i = 1; i<=end; i++){
+            System.out.println(i);
+        }
+        */
+        
+        //Part 2
+        
         System.out.println("Where to?");
         int end = Integer.valueOf(scanner.nextLine());
         System.out.println("where from?");
@@ -16,7 +26,6 @@ public class FromWhereToWhere {
         for(int i = star; i<=end; i++){
             System.out.println(i);
         }
-       
+        
     }
 }
- 
